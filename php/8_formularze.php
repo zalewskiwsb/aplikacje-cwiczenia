@@ -29,11 +29,17 @@ if ($has_post) {
 		|| empty($email) || empty($city)) {
 		echo "Wszystkie pola są wymagane!<br>";
 	} else {
-		echo "Imię: " . cleanup($fname) . "<br>";
-		echo "Nazwisko: " . cleanup($lname) . "<br>";
-		echo "Data urodzenia: " . $birthday . "<br>";
-		echo "Email: " . $email . "<br>";
-		echo "Miasto: " . $city . "<br>";
+		$fname = cleanup($fname);
+		$lname = cleanup($lname);
+		$city = cleanup($city);
+
+		echo <<<WIZYTOWKA
+		Imię: $fname <br>
+		Nazwisko: $lname <br>
+		Data urodzenia: $birthday <br>
+		Email: $email <br>
+		Miasto: $city <br>
+WIZYTOWKA;
 	}
 	echo "<hr>";
 }
