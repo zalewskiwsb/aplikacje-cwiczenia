@@ -1,0 +1,18 @@
+p {
+	font-size: 3em;
+	color: blue;
+	text-shadow: 10px 10px 6px red;
+}
+
+div {
+	background-color: grey;
+	font-size: 2em;
+	text-shadow: 0 2px 0 #fff;
+}
+
+div > div {
+	background-color: azure;
+	font-size: 16px;
+	max-width: 80%;
+	box-shadow: 10px 10px 10px black;
+}

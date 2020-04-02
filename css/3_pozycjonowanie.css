@@ -1,0 +1,37 @@
+p, a {
+	border: solid 1px grey;
+	width: 50%;
+	margin: 20px;
+	padding: 30px;
+	display: block;
+}
+
+#d2 {
+	padding: 20px;
+	background: #eee;
+	font-family: Helvetica, sans-serif;
+	line-height: 1.4em;
+}
+
+body {
+	background-color: grey;
+}
+
+.wrapper {
+	background-color: white;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img {
+	width: 150px;
+	float: left;
+	margin: 10px;
+}
