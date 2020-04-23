@@ -13,15 +13,15 @@ services:
       #- mysql
     environment:
       DB_HOST: mysql
-      DB_DATABASE: laravel_docker
-      DB_USERNAME: app
+      DB_DATABASE: db
+      DB_USERNAME: db_user
       DB_PASSWORD: password
-  #mysql:
-    #image: mysql:5.7
-    #ports:
-      #- 13306:3306
-    #environment:
-      #MYSQL_DATABASE: laravel_docker
-      #MYSQL_USER: app
-      #MYSQL_PASSWORD: password
-      #MYSQL_ROOT_PASSWORD: password
+  mysql:
+    image: mysql:8.0
+    ports:
+      - 13306:3306
+    environment:
+      MYSQL_DATABASE: db
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
